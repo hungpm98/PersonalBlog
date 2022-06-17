@@ -9,3 +9,4 @@ pin "lodash", to: "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js", p
 # pin "select2", to: "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js", preload: true
 # pin "flatpickr", to: "https://cdn.jsdelivr.net/npm/flatpickr", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
+pin_all_from "app/javascript/custom", under: "custom"
