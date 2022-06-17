@@ -1,0 +1,12 @@
+<% content_for :body_class, "unauthenticate" %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "user", data: {turbo: "false"}) do |f| %>
+  <div class="form-group">
+    <%= f.text_field :email, autofocus: true, placeholder: "email", class: "form-control form-control-user" %>
+  </div>
+  <div class="form-group">     
+    <%= f.password_field :password, placeholder: "password", class: "form-control form-control-user"  %>
+  </div>
+  <button type="submit" class="btn btn-primary btn-user btn-block">
+      Login
+  </button>
+<% end %>
